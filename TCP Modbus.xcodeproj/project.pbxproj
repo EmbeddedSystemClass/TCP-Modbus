@@ -3,17 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		84487DE41D6551D5007E30D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487DE31D6551D5007E30D8 /* main.m */; };
 		84487DE71D6551D5007E30D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487DE61D6551D5007E30D8 /* AppDelegate.m */; };
-		84487DEA1D6551D5007E30D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487DE91D6551D5007E30D8 /* ViewController.m */; };
 		84487DED1D6551D5007E30D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84487DEB1D6551D5007E30D8 /* Main.storyboard */; };
 		84487DF01D6551D5007E30D8 /* TCP_ModBus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84487DEE1D6551D5007E30D8 /* TCP_ModBus.xcdatamodeld */; };
 		84487DF21D6551D5007E30D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84487DF11D6551D5007E30D8 /* Assets.xcassets */; };
 		84487DF51D6551D5007E30D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84487DF31D6551D5007E30D8 /* LaunchScreen.storyboard */; };
+		84487E071D655427007E30D8 /* ServerThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E061D655427007E30D8 /* ServerThread.m */; };
+		84487E0A1D655434007E30D8 /* ClientThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E091D655434007E30D8 /* ClientThread.m */; };
+		84487E0D1D655445007E30D8 /* ServerRegistrCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E0C1D655445007E30D8 /* ServerRegistrCell.m */; };
+		84487E101D65545C007E30D8 /* ClientRegistrCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E0F1D65545C007E30D8 /* ClientRegistrCell.m */; };
+		84487E131D65546B007E30D8 /* MasterServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E121D65546B007E30D8 /* MasterServerController.m */; };
+		84487E161D655476007E30D8 /* SlaveServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E151D655476007E30D8 /* SlaveServerController.m */; };
+		84487E191D655481007E30D8 /* MasterClientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E181D655481007E30D8 /* MasterClientController.m */; };
+		84487E1C1D655496007E30D8 /* SlaveClientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84487E1B1D655496007E30D8 /* SlaveClientController.m */; };
+		84487E201D6554A3007E30D8 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 84487E1E1D6554A3007E30D8 /* images */; };
+		84487E221D65592C007E30D8 /* king_30x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84487E211D65592B007E30D8 /* king_30x.png */; };
+		84487E241D65593C007E30D8 /* pawn_30x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84487E231D65593C007E30D8 /* pawn_30x.png */; };
+		8464D1491D8AFE5200A4A5DF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8464D1481D8AFE5200A4A5DF /* logo.png */; };
+		84F895351DAC00FB00331EC0 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 84F895341DAC00FB00331EC0 /* icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +33,32 @@
 		84487DE31D6551D5007E30D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84487DE51D6551D5007E30D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84487DE61D6551D5007E30D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84487DE81D6551D5007E30D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84487DE91D6551D5007E30D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84487DEC1D6551D5007E30D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84487DEF1D6551D5007E30D8 /* TCP_ModBus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TCP_ModBus.xcdatamodel; sourceTree = "<group>"; };
 		84487DF11D6551D5007E30D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84487DF41D6551D5007E30D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84487DF61D6551D5007E30D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84487E051D655427007E30D8 /* ServerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerThread.h; sourceTree = "<group>"; };
+		84487E061D655427007E30D8 /* ServerThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerThread.m; sourceTree = "<group>"; };
+		84487E081D655434007E30D8 /* ClientThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientThread.h; sourceTree = "<group>"; };
+		84487E091D655434007E30D8 /* ClientThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientThread.m; sourceTree = "<group>"; };
+		84487E0B1D655445007E30D8 /* ServerRegistrCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerRegistrCell.h; sourceTree = "<group>"; };
+		84487E0C1D655445007E30D8 /* ServerRegistrCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerRegistrCell.m; sourceTree = "<group>"; };
+		84487E0E1D65545C007E30D8 /* ClientRegistrCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientRegistrCell.h; sourceTree = "<group>"; };
+		84487E0F1D65545C007E30D8 /* ClientRegistrCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientRegistrCell.m; sourceTree = "<group>"; };
+		84487E111D65546B007E30D8 /* MasterServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterServerController.h; sourceTree = "<group>"; };
+		84487E121D65546B007E30D8 /* MasterServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterServerController.m; sourceTree = "<group>"; };
+		84487E141D655476007E30D8 /* SlaveServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlaveServerController.h; sourceTree = "<group>"; };
+		84487E151D655476007E30D8 /* SlaveServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlaveServerController.m; sourceTree = "<group>"; };
+		84487E171D655481007E30D8 /* MasterClientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterClientController.h; sourceTree = "<group>"; };
+		84487E181D655481007E30D8 /* MasterClientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterClientController.m; sourceTree = "<group>"; };
+		84487E1A1D655496007E30D8 /* SlaveClientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlaveClientController.h; sourceTree = "<group>"; };
+		84487E1B1D655496007E30D8 /* SlaveClientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlaveClientController.m; sourceTree = "<group>"; };
+		84487E1E1D6554A3007E30D8 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		84487E211D65592B007E30D8 /* king_30x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = king_30x.png; path = "TCP ModBus/images/king_30x.png"; sourceTree = "<group>"; };
+		84487E231D65593C007E30D8 /* pawn_30x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pawn_30x.png; path = "TCP ModBus/images/pawn_30x.png"; sourceTree = "<group>"; };
+		8464D1481D8AFE5200A4A5DF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "TCP ModBus/images/logo.png"; sourceTree = "<group>"; };
+		84F895341DAC00FB00331EC0 /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +75,9 @@
 		84487DD61D6551D5007E30D8 = {
 			isa = PBXGroup;
 			children = (
+				8464D1481D8AFE5200A4A5DF /* logo.png */,
+				84487E231D65593C007E30D8 /* pawn_30x.png */,
+				84487E211D65592B007E30D8 /* king_30x.png */,
 				84487DE11D6551D5007E30D8 /* TCP ModBus */,
 				84487DE01D6551D5007E30D8 /* Products */,
 			);
@@ -62,8 +96,9 @@
 			children = (
 				84487DE51D6551D5007E30D8 /* AppDelegate.h */,
 				84487DE61D6551D5007E30D8 /* AppDelegate.m */,
-				84487DE81D6551D5007E30D8 /* ViewController.h */,
-				84487DE91D6551D5007E30D8 /* ViewController.m */,
+				84487DFC1D655232007E30D8 /* Threads */,
+				84487DFD1D65523C007E30D8 /* Views */,
+				84487DFE1D65524A007E30D8 /* Images */,
 				84487DEB1D6551D5007E30D8 /* Main.storyboard */,
 				84487DF11D6551D5007E30D8 /* Assets.xcassets */,
 				84487DF31D6551D5007E30D8 /* LaunchScreen.storyboard */,
@@ -80,6 +115,77 @@
 				84487DE31D6551D5007E30D8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84487DFC1D655232007E30D8 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				84487E081D655434007E30D8 /* ClientThread.h */,
+				84487E091D655434007E30D8 /* ClientThread.m */,
+				84487E051D655427007E30D8 /* ServerThread.h */,
+				84487E061D655427007E30D8 /* ServerThread.m */,
+			);
+			name = Threads;
+			sourceTree = "<group>";
+		};
+		84487DFD1D65523C007E30D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84487E021D6552C0007E30D8 /* Server */,
+				84487E011D6552B7007E30D8 /* Client */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84487DFE1D65524A007E30D8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84F895341DAC00FB00331EC0 /* icon */,
+				84487E1E1D6554A3007E30D8 /* images */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		84487E011D6552B7007E30D8 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				84487E1A1D655496007E30D8 /* SlaveClientController.h */,
+				84487E1B1D655496007E30D8 /* SlaveClientController.m */,
+				84487E171D655481007E30D8 /* MasterClientController.h */,
+				84487E181D655481007E30D8 /* MasterClientController.m */,
+				84487E041D655333007E30D8 /* ClientRegistrCell */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		84487E021D6552C0007E30D8 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				84487E141D655476007E30D8 /* SlaveServerController.h */,
+				84487E151D655476007E30D8 /* SlaveServerController.m */,
+				84487E111D65546B007E30D8 /* MasterServerController.h */,
+				84487E121D65546B007E30D8 /* MasterServerController.m */,
+				84487E031D655320007E30D8 /* ServerRegistrCell */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		84487E031D655320007E30D8 /* ServerRegistrCell */ = {
+			isa = PBXGroup;
+			children = (
+				84487E0B1D655445007E30D8 /* ServerRegistrCell.h */,
+				84487E0C1D655445007E30D8 /* ServerRegistrCell.m */,
+			);
+			name = ServerRegistrCell;
+			sourceTree = "<group>";
+		};
+		84487E041D655333007E30D8 /* ClientRegistrCell */ = {
+			isa = PBXGroup;
+			children = (
+				84487E0E1D65545C007E30D8 /* ClientRegistrCell.h */,
+				84487E0F1D65545C007E30D8 /* ClientRegistrCell.m */,
+			);
+			name = ClientRegistrCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,16 +214,17 @@
 		84487DD71D6551D5007E30D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Ivan Elyoskin";
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = tpu;
 				TargetAttributes = {
 					84487DDE1D6551D5007E30D8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 84487DDA1D6551D5007E30D8 /* Build configuration list for PBXProject "TCP ModBus" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 84487DDA1D6551D5007E30D8 /* Build configuration list for PBXProject "TCP Modbus" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -139,7 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8464D1491D8AFE5200A4A5DF /* logo.png in Resources */,
+				84487E241D65593C007E30D8 /* pawn_30x.png in Resources */,
+				84487E221D65592C007E30D8 /* king_30x.png in Resources */,
+				84487E201D6554A3007E30D8 /* images in Resources */,
 				84487DF51D6551D5007E30D8 /* LaunchScreen.storyboard in Resources */,
+				84F895351DAC00FB00331EC0 /* icon in Resources */,
 				84487DF21D6551D5007E30D8 /* Assets.xcassets in Resources */,
 				84487DED1D6551D5007E30D8 /* Main.storyboard in Resources */,
 			);
@@ -152,10 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84487DEA1D6551D5007E30D8 /* ViewController.m in Sources */,
+				84487E071D655427007E30D8 /* ServerThread.m in Sources */,
+				84487E0A1D655434007E30D8 /* ClientThread.m in Sources */,
+				84487E131D65546B007E30D8 /* MasterServerController.m in Sources */,
 				84487DE71D6551D5007E30D8 /* AppDelegate.m in Sources */,
 				84487DE41D6551D5007E30D8 /* main.m in Sources */,
+				84487E101D65545C007E30D8 /* ClientRegistrCell.m in Sources */,
+				84487E1C1D655496007E30D8 /* SlaveClientController.m in Sources */,
+				84487E191D655481007E30D8 /* MasterClientController.m in Sources */,
 				84487DF01D6551D5007E30D8 /* TCP_ModBus.xcdatamodeld in Sources */,
+				84487E161D655476007E30D8 /* SlaveServerController.m in Sources */,
+				84487E0D1D655445007E30D8 /* ServerRegistrCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +314,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -218,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -240,8 +361,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -257,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -269,10 +392,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L88TRVRSN9;
 				INFOPLIST_FILE = "TCP ModBus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "TPU.TCP-ModBus";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tpu.modbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -280,17 +408,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L88TRVRSN9;
 				INFOPLIST_FILE = "TCP ModBus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "TPU.TCP-ModBus";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tpu.modbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84487DDA1D6551D5007E30D8 /* Build configuration list for PBXProject "TCP ModBus" */ = {
+		84487DDA1D6551D5007E30D8 /* Build configuration list for PBXProject "TCP Modbus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84487DF71D6551D5007E30D8 /* Debug */,
@@ -306,6 +439,7 @@
 				84487DFB1D6551D5007E30D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
